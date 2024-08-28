@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 350px;
+    max-height: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow:5px 5px 50px 10px rgb(228, 226, 235);
+    padding-bottom: 30px;
+}
+
+.container img {
+    max-width: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.container h1 {
+    color: var(--Dark-blue);    
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+#desc {
+    margin: 20px;
+}
+
+p {
+    color: var(--Desaturated-blue);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.plan {
+    background-color: var(--Very-pale-blue);
+    max-width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.plan img {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 200px;
+}
+
+.bold {
+    font-weight: 900;
+    color: var(--Dark-blue);
+    font-size: 14px;
+}
+
+.text > p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.change {
+    text-align: right;
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    font-weight: 700;
+    font-size: smaller;
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.change:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.6);
+}
+
+.button {
+    background-color: var(--Bright-blue);
+    color: #fff;
+    padding: 15px;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    margin: 25px;
+    box-shadow: 0px 10px 25px rgb(202, 199, 213);
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+
+.cancel {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    color: var(--Dark-blue);
+}
